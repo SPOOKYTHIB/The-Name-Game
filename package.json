@@ -1,0 +1,28 @@
+{
+  "name": "the-name-game",
+  "version": "1.0.0",
+  "description": "A mini game in which the player must find the right gender for a given name.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SPOOKYTHIB/The-Name-Game.git"
+  },
+  "author": "Thibaut Raguin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SPOOKYTHIB/The-Name-Game/issues"
+  },
+  "homepage": "https://github.com/SPOOKYTHIB/The-Name-Game#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-layout": "^0.1.0",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "router": "^1.3.5"
+  }
+}
