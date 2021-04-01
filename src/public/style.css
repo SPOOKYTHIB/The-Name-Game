@@ -30,6 +30,7 @@ button:hover {
 
 #start {
     background-color: lightgreen;
+    top: 75%;
 }
 
 #retry {
@@ -51,11 +52,7 @@ button:hover {
     border-radius: 8px;
 }
 
-#start {
-    top: 75%;
-}
-
-#buttons {
+#answerButtons {
     top: 75%;
 }
 
@@ -68,7 +65,7 @@ button:hover {
     text-align: center;
 }
 
-#buttons, #start {
+#answerButtons, #start {
     display: flex;
     flex-direction: row;
     margin: 0;

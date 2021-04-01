@@ -5,6 +5,8 @@ const router = express.Router()
 const connection = databaseConnect()
 var SQLresult
 
+// Connexion à la base de données. Veillez à indiquer les bonnes informations ci-dessous.
+
 function databaseConnect() {
     return mysql.createConnection({
         host: "localhost",
@@ -15,9 +17,13 @@ function databaseConnect() {
     })
 }
 
+// L'accès à la racine du serveur retourne la vue index
+
 router.get('/', (req, res) => {
     res.render('index')
 })
+
+// L'accès à la route get_names (faite dans la fonction get_names) retourne le contenu de la base de données
 
 router.get('/get_names', (req, res) => {
     const queryString = "SELECT name FROM names"
