@@ -8,6 +8,8 @@ Vous aurez besoin de ces deux dépendances installées sur votre ordinateur :
 - **MySQL**
 - **Node.js**
 
+Vous aurez également besoin de créer un [**compte Gender-Api**](https://gender-api.com/fr) qui vous fournira une clé API. Récupérez-la depuis la page de votre compte et collez-la dans la variable **api_key** dans le fichier `src/javascript.js`.
+
 Si nécessaire, veillez à bien procéder à l'installation complète de **MySQL** avant de continuer, et assurez-vous d'entrer les bonnes informations dans la fonction **databaseConnect** située dans le fichier `src/routes.js`.
 
 # Installation

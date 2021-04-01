@@ -8,6 +8,8 @@ You will need to have these two dependencies installed on your computer:
 - **MySQL**
 - **Node.js**
 
+You will also need to create a [**Gender-Api account**](https://gender-api.com/) which will provide you an API key. Retrieve it from your account page and paste it in the **api_key** variable in `src/javascript.js`.
+
 If necessary, go through the **MySQL** setup before proceeding, and make sure to enter the correct information in the **databaseConnect** function located in `src/routes.js`.
 
 # Installation

@@ -3,6 +3,7 @@ var points
 var response
 var current_name
 var name_display
+var api_key = "Enter your API key here"
 
 function get_names() {
     var request = new XMLHttpRequest();
@@ -16,7 +17,7 @@ function get_names() {
 }
 
 function startGame() {
-  document.getElementById("startButton").hidden = true
+  document.getElementById("start").hidden = true
   get_names()
   name_display = document.getElementById("name")
   name_display.hidden = false
@@ -26,13 +27,10 @@ function startGame() {
   refreshName()
   refreshPoints()
   
-
+  document.getElementById("retry").hidden = true
   document.getElementById("male").hidden = false
-
   document.getElementById("female").hidden = false
-
-  document.getElementById("mixed").hidden =
-
+  document.getElementById("mixed").hidden = false
   document.getElementById("points").hidden = false
 }
 
@@ -44,18 +42,23 @@ function refreshName() {
 
 function refreshPoints() {
   var pointsDiv = document.getElementById("points")
-  pointsDiv.innerText = "Your points:" + points
+  pointsDiv.innerText = "Your points: " + points
   if (points == 0) {
-    alert('You lost.')
+    pointsDiv.innerText = "You lost."
+    document.getElementById("male").hidden = true
+    document.getElementById("female").hidden = true
+    document.getElementById("mixed").hidden = true
+    document.getElementById("retry").hidden = false
   }
   if (points == 20) {
-    alert('You won!')
+    pointsDiv.innerText = "You won! Wanna keep on going?"
+    playAudio("./ding.mp3")
   }
 }
 
 function fetchGender(gender) {
   const request = new XMLHttpRequest();
-  var requestURL = `https://gender-api.com/get?name=${current_name}&key=jfdhwlgZZwUFWgBXZY`;
+  var requestURL = `https://gender-api.com/get?name=${current_name}&key=${api_key}`;
     request.open('GET', requestURL);
     request.responseType  = 'json';
     request.send();
@@ -75,4 +78,7 @@ function fetchGender(gender) {
         refreshName()
     }
 }
-  
+
+function playAudio(file_url) {
+  new Audio(file_url).play();
+}

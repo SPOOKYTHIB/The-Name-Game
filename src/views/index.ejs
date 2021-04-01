@@ -2,7 +2,7 @@
 
 <h1>The Name Game</h1>
 
-<button onClick=startGame() id="startButton">PLAY</button>
+<button onClick=startGame() id="start">PLAY</button>
 
 <div id="name"></div>
 
@@ -11,6 +11,8 @@
 <button hidden id="male" onclick=fetchGender("male")>Male</button>
 <button hidden id="female" onclick=fetchGender("female")>Female</button>
 <button hidden id="mixed" onclick=fetchGender("mixed")>Mixed</button>
+
+<button hidden id="retry" onclick="startGame()">Retry</button>
 
 </div>
 

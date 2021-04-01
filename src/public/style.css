@@ -28,6 +28,15 @@ button:hover {
     background-color: #36608c;
 }
 
+#start {
+    background-color: lightgreen;
+}
+
+#retry {
+    background-color: red;
+    padding: 9 12;
+}
+
 #name {
     margin: 0;
     position: relative;
@@ -42,7 +51,7 @@ button:hover {
     border-radius: 8px;
 }
 
-#startButton {
+#start {
     top: 75%;
 }
 
@@ -59,7 +68,7 @@ button:hover {
     text-align: center;
 }
 
-#buttons, #startButton {
+#buttons, #start {
     display: flex;
     flex-direction: row;
     margin: 0;
