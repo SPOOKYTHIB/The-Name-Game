@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "S3D";
+    src: url("/fonts/Sketch 3D.otf") format("otf"),
+        url("/fonts/Sketch 3D.woff") format("woff2");
+}
+
+#container {
+    width: 100%;
+}
+
+h1 {
+    font-family: "S3D";
+    margin-top: 15%;
+    font-size: 80px;
+    text-align: center;
+}
+
+button {
+    font-size: x-large;
+    color: white;
+    background-color: #3f72aa;
+    border-radius: 8px;
+    border:none;
+    padding: 8 10;
+}
+
+button:hover {
+    background-color: #36608c;
+}
+
+#name {
+    margin: 0;
+    position: relative;
+    margin-top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+#startButton {
+    top: 75%;
+}
+
+#buttons {
+    top: 75%;
+}
+
+#female, #mixed {
+    margin-left: 5%;
+}
+
+#points {
+    font-size: 30px;
+    text-align: center;
+}
+
+#buttons, #startButton {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
