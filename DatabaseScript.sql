@@ -1,3 +1,4 @@
+SET GLOBAL local_infile = true;
 CREATE DATABASE the_name_game;
 USE the_name_game;
 CREATE TABLE names (
