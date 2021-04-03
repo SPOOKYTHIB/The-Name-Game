@@ -10,5 +10,5 @@ CREATE TABLE names (
 );
 /* Chargement des données depuis le fichier. Les champs sont délimités par des espaces ; ici, seul le premier champ est chargé, c'est-à-dire les prénoms */
 LOAD DATA LOCAL INFILE 'names.txt' INTO TABLE names COLUMNS TERMINATED BY ' ';
-/* Seul les 300 premiers noms de la liste doivent être importés, les autres sont supprimés */
+/* Seuls les 300 premiers noms de la liste doivent être importés, les autres sont supprimés */
 DELETE FROM names WHERE id > 300;
